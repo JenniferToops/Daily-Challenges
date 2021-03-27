@@ -1,2 +1,2 @@
 # Daily Challenges
-Completed Daily Challenges... some were completed prior to the creation of this repository.
+<img src="https://imgur.com/NlUEh8D" alt="codewars logo"><img src="https://imgur.com/NlUEh8D.png" alt="leetcode logo">
