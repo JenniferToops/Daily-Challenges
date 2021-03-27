@@ -5,4 +5,4 @@
 <br>
 **Class challenges, Codewar challenges, Leetcode challenges**
 
-<iframe src="https://giphy.com/embed/U5Dhg98ryYysg9cqMz" width="480" height="268" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/woofwaggers-struggle-struggles-dog-U5Dhg98ryYysg9cqMz">via GIPHY</a></p>
+<img src="https://media.giphy.com/media/U5Dhg98ryYysg9cqMz/giphy.gif" alt="gif of cute dog struggling to swim in a pool">
