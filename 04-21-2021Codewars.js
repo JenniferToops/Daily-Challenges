@@ -44,3 +44,21 @@ function isVow(arr) {
             }
         } return arr;
     }
+
+
+//has some string stuff
+//noobCode 01: SUPERSIZE ME.... or rather, this integer!
+/* Write a function that rearranges an integer into its largest possible value.
+Example (Input --> Output)
+123456 --> 654321
+105 --> 510
+12 --> 21 */
+
+function superSize(num){
+  let strNum = String(num)
+  let arrNum = Array.from(strNum)
+  let sortArrNum = arrNum.sort((a,b) => b-a)
+  let reverseSortNum = sortArrNum.join("")
+  let bigNum = parseInt(reverseSortNum)
+  return bigNum
+}
