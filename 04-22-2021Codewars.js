@@ -27,3 +27,28 @@ function stringy(size) {
         }
       } return repeatedString.join("")   
   }
+
+
+  //Well of Ideas - Easy Version
+
+  function well(x){
+    // param = arr with good/bad strings
+    // if <= 2 good ideas, return publish
+    // if > 2 good ideas, return i smell a series
+    // if all bad ideas, return fail
+          let good = []
+          let poor = []
+    for (let i = 0; i < x.length; i++) {
+          if (x[i] === "good") {
+            good.push(x[i])
+          } else {
+            poor.push(x[i])
+            }
+      } if (good.length > 0 && good.length < 3) {
+          return "Publish!"
+        } else if (good.length >= 3) {
+          return "I smell a series!"
+        } else {
+          return "Fail!"
+        }
+    }
