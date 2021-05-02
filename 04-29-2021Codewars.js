@@ -52,3 +52,11 @@ function toJadenCase(str) {
   let jadenCase = addUpperCase.join(" ")
   return jadenCase
   }
+
+
+
+  function loop(n) {
+    for (var i=0;i<n;i++) {
+      console.log(array[i%array.length])
+    }
+  }
