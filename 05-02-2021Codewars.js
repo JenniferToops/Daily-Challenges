@@ -18,3 +18,19 @@ function removeEveryOther(arr){
       }
     } return newArr
   }
+
+//Printing Array elements with Comma delimiters
+/*Input: Array of elements
+
+["h","o","l","a"]
+
+Output: String with comma delimited elements of the array in th same order.
+
+"h,o,l,a" */
+
+  function printArray(array){
+    //given an array with string elements separated by commas
+    //return that string
+    let newString = array.join(",")
+    return newString
+  }
