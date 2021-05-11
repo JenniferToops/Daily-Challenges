@@ -1,3 +1,8 @@
+//Give a short description of what the method does, how it works, it's time complexity (if appropriate), and give three examples of it in action!
+
+
+
+//****** REDUCE *******/
 /* Given a non-empty array of integers, return the result of multiplying the values together in order. Example:
 [1, 2, 3, 4] => 1 * 2 * 3 * 4 = 24 */
 
