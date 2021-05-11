@@ -61,3 +61,35 @@ If he doesn't get 10 hoops, return the string "Keep at it until you get it". */
 // }
 
 const hoopCount = n => n >= 10 ? "Great, now move on to tricks" : "Keep at it until you get it"
+
+//Enumerable Magic #25 - Take the First N Elements
+
+/* Create a method take that accepts a list/array and a number n, and returns a list/array array of the first n elements from the list/array.
+
+If you need help, here's a reference:
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice */
+
+// function take(arr, n) {
+//   return arr.slice(0, n)
+// }
+
+const take = (arr, n) => arr.slice(0,n);
+
+//Thinkful - Logic Drills: Traffic light
+
+/* You're writing code to control your town's traffic lights. You need a function to handle each change from green, to yellow, to red, and then to green again.
+
+Complete the function that takes a string as an argument representing the current state of the light and returns a string representing the state the light should change to.
+
+For example, update_light('green') should return 'yellow'. */
+
+function updateLight(current) {
+    if (current === "green") {
+      return "yellow"
+    } else if (current === "yellow") {
+      return "red"
+    } else if ( current === "red") {
+      return "green"
+    }
+  }
