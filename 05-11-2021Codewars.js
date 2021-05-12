@@ -11,3 +11,16 @@ function mango(quantity, price){
     // quantity/3 * price * 2
     return (quantity % 3 * price) + Math.floor(quantity / 3) * 2 * price 
   }
+
+
+//Counting sheep...
+/* Consider an array/list of sheep where some sheep may be missing from their place. We need a function that counts the number of sheep present in the array (true means present). */
+
+  function countSheeps(arrayOfSheep) {
+    let arr = []
+    for (let i = 0; i < arrayOfSheep.length; i++) {
+      if (arrayOfSheep[i] == true) {
+        arr.push(1)
+      } 
+    } return arr.reduce((acc, c) => acc + c, 0)
+  } 
