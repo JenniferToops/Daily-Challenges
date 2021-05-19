@@ -33,3 +33,44 @@ Array can contain numbers or strings. X can be either. Return true if the array 
 //   };
 
 const check = (a, x) => a.includes(x)
+
+//ES6 string addition
+/* It is easy to join two strings together like this string1 + string2.
+
+Another way to get the desired result would be with string1.concat(string2)
+
+ES6 has introduced another way of joining strings. Your task is to find out what this is and write a function that will add two strings together, there must be a space between the two strings.
+
++ , .concat() & .join() will not be allowed in this exercise. I have also removed some other methods that can be used to cheat!
+
+If one of the arguments is a number your code must coerce it into being a string. */
+
+function joinStrings(string1, string2){
+    return `${string1} ${string2}`
+ }
+
+ //Simple Comparison?
+
+ /* Write a function that will compare two values, one will be a number and one will be a string. Return true if they are the same character (regardless of their different data types) and return false if they are not.
+
+To make this challange harder and to promp the challenger to read up about coercion I have disabled some of the built in methods including .toString(), .join(), .split(), parseInt and .Number(). */
+
+const add = (a, b) => a == b ? true : false
+
+//Remove the time
+
+/* You're re-designing a blog and the blog's posts have the following format for showing the date and time a post was made:
+
+Weekday Month Day, time e.g., Friday May 2, 7pm
+
+You're running out of screen real estate, and on some pages you want to display a shorter format, Weekday Month Day that omits the time.
+
+Write a function, shortenToDate, that takes the Website date/time in its original string format, and returns the shortened format.
+
+Assume shortenToDate's input will always be a string, e.g. "Friday May 2, 7pm". Assume shortenToDate's output will be the shortened string, e.g., "Friday May 2". */
+
+function shortenToDate(longDate) {
+    let commaIndex = longDate.indexOf(",")
+    let short = longDate.slice(0, commaIndex) 
+    return short
+  }
