@@ -162,3 +162,17 @@ const validateCode = code => /[1-3]/.test(String(code)[0])
 function buildString(...template){
   return `I like ${template.join(', ')}!`;
 }
+
+//Moving Zeros to the end
+
+var moveZeros = function (arr) {
+  let newArr = []
+  let zeroArr = []
+ for (let i = 0; i < arr.length; i++) {
+    if (arr[i] !== 0) {
+      newArr.push(arr[i])
+    } else {
+      zeroArr.push(arr[i])
+    }
+  } return newArr.concat(zeroArr)
+}
