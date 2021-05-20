@@ -74,3 +74,91 @@ function shortenToDate(longDate) {
     let short = longDate.slice(0, commaIndex) 
     return short
   }
+
+//Are arrow functions odd?
+
+/* Time to test your basic knowledge in functions! Return the odds from a list:
+
+[1, 2, 3, 4, 5]  -->  [1, 3, 5]
+[2, 4, 6]        -->  [] */
+
+
+function odds(values){
+  return values.filter(el => el % 2 );
+}
+
+//What is between?
+
+function between(a, b) {
+  //given two integers as parameters, need to return an array with 
+  //all consecutive integers between the parameters and including the parameters
+  let array = []
+  for (let i = a; i <= b; i++) {
+    array.push(i)
+  } return array
+}
+
+//Cat years, dog years
+
+var humanYearsCatYearsDogYears = function(humanYears) {
+  // parameter = human years integer >=1
+  // return = cat years & dog years pushed into an array with the human years (age)
+      let firstYear = 15
+      let secondYear = firstYear + 9
+      let moreCatYears = secondYear + (4 * (humanYears - 2))
+      let moreDogYears = secondYear + (5 * (humanYears - 2))
+      
+  if (humanYears === 1) {
+      catYears = firstYear
+      dogYears = firstYear
+  } else if (humanYears === 2) {
+      catYears = secondYear
+      dogYears = secondYear
+  } else if (humanYears > 2) {
+      catYears = moreCatYears
+      dogYears = moreDogYears
+  }
+    let ages = [humanYears, catYears, dogYears]
+    return ages 
+}
+
+//Holiday VIII-Duty Free
+function dutyFree(normPrice, discount, hol){
+  let savings = normPrice * discount/100
+  let bottles = Math.floor(hol / savings)
+  return bottles
+}
+
+//Contamination #1-String-
+// function contamination(text, char){
+//   let textLength = text.length
+//   console.log(textLength)
+//   console.log(char)
+//   if (textLength < 1 || char.length < 1) {
+//     return ""
+//   } else if (textLength > 0 && char.length > 0) {
+//     return char.repeat(textLength)
+//   }
+// }
+
+const contamination = (text, char) => text.length < 1 || char.Length < 1 ? "" : char.repeat(text.length)
+
+//validate code with simple regex
+
+// function validateCode (code) {
+//   let strCode = String(code)
+//   let typeCode = typeof strCode
+//   const regex = /[1-3]/
+//   if (/[1-3]/.test(strCode[0])) {
+//   return true
+//   } else {
+//     return false
+//   }
+// }
+
+const validateCode = code => /[1-3]/.test(String(code)[0]) 
+
+//String Templates = bug fixing #5
+function buildString(...template){
+  return `I like ${template.join(', ')}!`;
+}
