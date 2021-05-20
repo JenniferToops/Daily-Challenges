@@ -186,3 +186,17 @@ function calculate(str) {
   let evalString = eval(newerStr)
   return String(evalString)
 }
+
+//A wolf in sheep's clothing
+
+function warnTheSheep(queue) {
+  let reverseQueue = queue.reverse()
+  let closestAnimal = queue[0]
+  if (closestAnimal == "wolf") {
+  return "Pls go away and stop eating my sheep"
+  } else {
+    let wolfIndex = queue.indexOf("wolf")
+    let sheepInDanger = wolfIndex
+    return `Oi! Sheep number ${sheepInDanger}! You are about to be eaten by a wolf!`
+  }
+}
