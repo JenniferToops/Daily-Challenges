@@ -176,3 +176,13 @@ var moveZeros = function (arr) {
     }
   } return newArr.concat(zeroArr)
 }
+
+//Basic Math (Add or Subtract)
+function calculate(str) {
+  const regex = /plus/g
+  const regex2 = /minus/g
+  let newStr = str.replace(regex, "+")
+  let newerStr = newStr.replace(regex2, "-")
+  let evalString = eval(newerStr)
+  return String(evalString)
+}
