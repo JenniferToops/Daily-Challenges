@@ -7,3 +7,11 @@ function getSum(a, b) {
       sortedFullArr.push(i)
     } return sortedFullArr.reduce((acc, c) => acc + c, 0)
   }
+
+  //use map() to double the values in an array
+
+  const double = array => array.map(el => el * 2)
+
+  //Use reduce() to calculate the sum of the values in an array
+
+  const sum = array => array.reduce((acc, c) => acc + c, 0)
