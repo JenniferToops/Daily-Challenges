@@ -7,3 +7,6 @@ const find = (a, el) => a.length < 0 || a.indexOf(el) === -1 ? "Not found" : a.i
 
 const quote = fighter => fighter.toLowerCase() === `george saint pierre` ? `I am not impressed by your performance.` : `I'd like to take this chance to apologize.. To absolutely NOBODY!`
 
+//Is it a palindrome?
+
+const isPalindrome = x => x.toLowerCase() === x.toLowerCase().split("").reverse().join("") ? true : false
