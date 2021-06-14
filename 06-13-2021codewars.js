@@ -20,3 +20,22 @@ function whoIsPaying(name){
 //Return the type of the sum of the two arguments
 const typeOfSum = (a, b) => (typeof a === "string") || (typeof b === "string") ? "string" : "number"
 
+//Which triangle is that?
+
+
+var typeOfTriangle = function (sideA, sideB, sideC) {
+  // params are sideA, sideB, sideC
+  // if isosceles = 2 sides the same, 1 not
+  // if equilateral = 3 sides the same
+  // if scalene = no sides the same
+  // if invalid triangle has length < 1, is a float, no side given, or param give is not a number
+  if ((isNaN(sideA)|| isNaN(sideB) || isNaN(sideC)) || (sideA < 1 || sideB < 1 || sideC < 1) || (sideA + sideB <= sideC || sideB + sideC <= sideA || sideA + sideC <= sideB)) {
+        return "Not a valid triangle"
+  } else if ((sideA === sideB && sideB === sideC && sideA === sideC)) {
+      return "Equilateral"
+  } else if ((sideA === sideB && sideC || sideB === sideC || sideA ===sideC)) {
+      return "Isosceles"
+  } else if ((typeof sideA === "number" && typeof sideB === "number" && typeof sideC === "number")) {
+      return "Scalene"
+  } 
+}
