@@ -48,3 +48,23 @@ function paul(x) {
           return 'Miserable!'
         }
   }
+
+// compare within margin
+// crazy terrible instructions, just read examples and guess
+
+  function closeCompare(a, b, margin = 0){
+    let dist = Math.abs(a - b)
+   
+    if (margin >= dist) {
+        return 0
+      }
+      else if (margin === 0 || margin < dist) {
+      if (a < b) {
+      return -1
+      } else if (a > b) {
+        return 1
+      } else if (a === b) {
+        return 0
+      } 
+    }
+  }
