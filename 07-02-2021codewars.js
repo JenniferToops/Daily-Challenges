@@ -25,3 +25,23 @@ function openOrSenior(data){
         } 
       } return membershipCategory
   }
+
+
+  /*
+   */
+
+  function divisors(integer) {
+    let divisors = []
+  for (let i = 0; i < integer; i++) {
+        if (integer % parseInt(i) === 0 && (parseInt(i) !== 1)) {
+        console.log(parseInt(i))
+        divisors.push(parseInt(i))
+      } 
+    } 
+        if (divisors.length === 0) {
+        return `${integer} is prime`
+    } 
+        else {
+          return divisors
+    }
+}
