@@ -27,3 +27,15 @@ function stringTransformer(str) {
   })
     return newStrArr.join("").split(" ").reverse().join(" ")
   }
+
+  function transform(str) {
+    let newStr = str
+    .split(' ')
+    .reverse()
+    .join(' ')
+    .split('')
+    for(let i = 0; i < newStr.length; i++) {
+      newStr[i] === newStr[i].toUpperCase() ? newStr[i] = newStr[i].toLowerCase() : newStr[i] = newStr[i].toUpperCase() 
+    }
+    return newStr.join('')
+  }
