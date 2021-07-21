@@ -11,3 +11,7 @@ String str will never be null. */
 
 
 const replaceDots = str => str.replace(/\./g, "-")
+
+
+/*Exclamation marks series #11: Replace all vowel to exclamation mark in the sentence*/
+const replace = s => s.replace(/[aeiou]/gi, "!")
