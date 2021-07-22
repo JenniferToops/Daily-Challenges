@@ -15,3 +15,7 @@ const replaceDots = str => str.replace(/\./g, "-")
 
 /*Exclamation marks series #11: Replace all vowel to exclamation mark in the sentence*/
 const replace = s => s.replace(/[aeiou]/gi, "!")
+
+/*Short Long Short */
+const solution = (a, b) => a.length < b.length ? a + b + a : b + a + b
+  
