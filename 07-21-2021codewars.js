@@ -19,3 +19,19 @@ const replace = s => s.replace(/[aeiou]/gi, "!")
 /*Short Long Short */
 const solution = (a, b) => a.length < b.length ? a + b + a : b + a + b
   
+/* Is the string uppercase? */
+String.prototype.isUpperCase = function() {
+    return this.toString() ===  this.toUpperCase()
+  }
+
+/* 
+Find the first non-consecutive number
+*/
+
+  function firstNonConsecutive (arr) {
+    for (let i = 1; i < arr.length; i++) {
+      if (arr[i] !== arr[i-1] + 1) {
+        return arr[i]
+      }
+      } return null
+    }  
