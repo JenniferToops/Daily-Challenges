@@ -92,3 +92,48 @@ function howManydays(month){
           break;  
     }
   }
+
+/* Training JS #16: Methods of String object--slice(), substring() and substr() */
+/* The first mission: Traversing arr, find the shortest string length.
+
+The second mission: Traversing arr again, intercept all strings to the shortest string length(Start from index0). you can use one of slice() substring() or substr() do it. return the result after finished the work. */
+
+  function cutIt(arr){
+    let elLength = arr.map(el => el.length)
+    let minimumEl = Math.min(... elLength)
+    let truncatedEls = arr.map((el, i, arr) => el.slice(0, minimumEl))
+    return truncatedEls
+  }
+
+/* Be Concise III - Sum Squares */
+
+  const sumSquares = array => array.reduce((acc, c) => acc + c ** 2, 0)
+
+  //JamesProDev: @oldcoderchick Set "bigfollows" as a "bad word" and they will get stopped by Automod
+
+
+//   JamesProDev: @oldcoderchick Set "bigfollows" as a "bad word" and they will get stopped by Automod
+
+/* No zeros for heros 
+Numbers ending with zeros are boring.
+
+They might be fun in your world, but not here.
+
+Get rid of them. Only the ending ones.
+
+1450 -> 145
+960000 -> 96
+1050 -> 105
+-1050 -> -105
+Zero alone is fine, don't worry about it. Poor guy anyway */
+
+  function noBoringZeros(n) {
+    if (n === 0) {
+      return 0
+    } else {
+      let str = n.toString()
+      const regex = /0+$/
+      let trunc = str.replace(regex, "")
+      return Number(trunc)
+    }
+  }
