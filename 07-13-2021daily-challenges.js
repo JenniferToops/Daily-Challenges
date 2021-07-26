@@ -9,11 +9,7 @@ function removeConsecutiveDuplicates(s) {
     return sString.join(" ")
   }
 
-  //refactor!
-  function removeConsecDupes(str) {
 
-
-  }
 
 //   create a function that returns the capitalization of a name. No Arrays, No REGEX!
 
@@ -85,3 +81,4 @@ function camelCaseStr(str) {
     return lowerArr.join("")
     }   
 }
+//or

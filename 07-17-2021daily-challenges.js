@@ -33,9 +33,12 @@ function numberInPostion(arr){
 // findUniq([ 0, 0, 0.55, 0, 0 ]) === 0.55
 // It’s guaranteed that array contains at least 3 numbers.
 function findUniq(arr) {
-    arr.sort((a, b) => a -b )
+    arr.sort((a, b) => a - b )
     return arr[0] === arr[1] ? arr.pop() : arr[0]
 }
 // findUniq([ 1, 1, 1, 2, 1, 1 ]) === 2
 // findUniq([ 0, 0, 0.55, 0, 0 ]) === 0.55
 findUniq([1, 1, 1, 2, 1, 1 ])
+
+
+

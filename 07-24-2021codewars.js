@@ -137,3 +137,6 @@ Zero alone is fine, don't worry about it. Poor guy anyway */
       return Number(trunc)
     }
   }
+
+  const noBoringZeros = n => n && !(n % 10) ? noBoringZeros(n / 10) : n;
+//basically, if the number n still is divisible by 10, recurse with n / 10
