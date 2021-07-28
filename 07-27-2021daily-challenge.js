@@ -54,3 +54,21 @@ function task(w, n, c) {
       return `It is ${w} today, ${weekdays.Friday}, you have to work, you must spray ${n} trees and you need ${cost} dollars to buy liquid` 
     }
   }
+
+  /* Sum of integers in string
+  Your task in this kata is to implement a function that calculates the sum of the integers inside a string. For example, in the string "The30quick20brown10f0x1203jumps914ov3r1349the102l4zy dog", the sum of the integers is 3635.*/
+
+  function sumOfIntegersInString(s){
+    //param: string that contains letters and/or numbers--the digits that are consecutive are considered a number and the ones separated by other character are independent
+    //return: returning the sum of the integers (number)
+    //example: 'hey3there8Barbara22' -> 33
+    //pseudo: choo_king says reduce. set regular expression to 'numbers'
+    const regex = /\d+/g
+    let sArr = s.match(regex)
+    if (sArr == null) {
+      return 0
+    } else {
+      let sArrNums = sArr.map(el => Number(el))
+      return sArrNums.reduce((acc, c) => acc + c, 0)
+    } 
+  }
