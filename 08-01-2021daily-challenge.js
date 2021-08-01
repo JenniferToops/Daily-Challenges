@@ -23,3 +23,6 @@ function solution(number){
       } 
     } return arr.reduce((acc, c) => acc + c, 0)
   }
+
+/* Stop gninnipS My sdroW! */
+  const spinWords = string => string.split(" ").map(el => el.length >= 5 ? el.split('').reverse().join('') : el).join(" ")

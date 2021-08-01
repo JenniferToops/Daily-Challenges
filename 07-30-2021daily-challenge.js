@@ -63,5 +63,14 @@ function mxdiflg(a1, a2) {
 //Double Char
 const doubleChar = str => str.split('').map(el => el + el).join("")
 
+//CountOddNumberBelowN
 
+function oddCount(n){
+    let counter = 0
+    for (let i = 1; i < n; i++) {
+      if (i % 2 !== 0) {
+        counter += 1
+      } 
+    } return counter
+  }
 
