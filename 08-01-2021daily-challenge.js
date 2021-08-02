@@ -43,3 +43,20 @@ function solution(number){
           return `${names[0]}, ${names[1]} and ${names.length - 2} others like this`
         }
     }
+
+
+    //object.create() practice
+
+    const person = {
+        isHuman: false,
+        printIntroduction: function() {
+            console.log(`My name is ${this.name}. Am I human? ${this.isHuman}`)
+        }
+    }
+
+    const me = Object.create(person) 
+
+    me.name = 'Jenn'
+    me.isHuman = false
+    me.printIntroduction()
+// My name is Jenn. Am I human? false
