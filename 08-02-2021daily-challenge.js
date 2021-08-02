@@ -20,6 +20,19 @@ function findDeletedNumber(array1, mixArr) {
   }
 
 
+  function findDeletedNum(arr, mixWDel) {
+    let tot1 = arr.reduce((a, b) => a + b, 0)
+    let tot2 = mixWDel.reduce((a, b) => a + b, 0)
+    return tot1 = tot2
+}
+
+function findDeleteNum(arr, mixWDel) {
+    // filter through each element of the arr array and it will match with each elem
+    return arr.filter(v => mixWDel.indexOf(v === -1)[0] || 0)
+
+}
+
+
   /* Isograms
 An isogram is a word that has no repeating letters, consecutive or non-consecutive. Implement a function that determines whether a string that contains only letters is an isogram. Assume the empty string is an isogram. Ignore letter case.
 
@@ -43,6 +56,8 @@ function isIsogram(str){
   function isIsogram(str){ 
     return !/(\w).*\1/i.test(str)
   }
+
+
 
   /* Switcheroo 
   Given a string made up of letters a, b, and/or c, switch the position of letters a and b (change a to b and vice versa). Leave any incidence of c untouched.
