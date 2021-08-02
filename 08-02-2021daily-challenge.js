@@ -43,3 +43,25 @@ function isIsogram(str){
   function isIsogram(str){ 
     return !/(\w).*\1/i.test(str)
   }
+
+  /* Switcheroo 
+  Given a string made up of letters a, b, and/or c, switch the position of letters a and b (change a to b and vice versa). Leave any incidence of c untouched.
+
+Example:
+
+'acb' --> 'bca'
+'aabacbaa' --> 'bbabcabb' */
+
+function switcheroo(x){
+    x.split("")
+    let strArr = []
+    for (let i = 0; i < x.length; i++) {
+      if (x[i] === "a") {
+        strArr.push("b")
+      } else if (x[i] === "b"){
+          strArr.push("a")
+        } else {
+          strArr.push(x[i])
+        }
+    } return strArr.join("")
+  }
