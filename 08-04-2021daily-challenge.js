@@ -63,3 +63,18 @@ Good luck!
       }
       return [evenUpperCaseString, oddUpperCaseString]
   };
+
+  /* Alternate capitalization Given a string, capitalize the letters that occupy even indexes and odd indexes separately, and return as shown below. Index 0 will be considered even.
+
+For example, capitalize("abcdef") = ['AbCdEf', 'aBcDeF']. See test cases for more examples.
+
+The input will be a lowercase string with no spaces.
+
+Good luck!*/
+
+function capitalize(s){
+    let upperCaseEven = s.split("").map((el, i) => i % 2 === 0 ? el.toUpperCase() : el)
+    let upperCaseOdd = s.split("").map((el, i) => i % 2 !== 0 ? el.toUpperCase() : el)
+    return [upperCaseEven.join(""),upperCaseOdd.join("")]
+    
+  };
