@@ -29,7 +29,6 @@ function findDeletedNumber(array1, mixArr) {
 function findDeleteNum(arr, mixWDel) {
     // filter through each element of the arr array and it will match with each elem
     return arr.filter(v => mixWDel.indexOf(v === -1)[0] || 0)
-
 }
 
 
