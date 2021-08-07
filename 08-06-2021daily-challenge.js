@@ -68,3 +68,6 @@ countSquares(4) --> 98 */
     var countSquares = function(cuts){
         return cuts === 0 ? 1 : (((cuts + 1) ** 2) * (cuts + 1)) - ((cuts - 1) ** 2) * (cuts - 1)
       }
+
+      //proper formula = 
+      const countSquares = cuts => cuts === 0 ? 1 : (6 * cuts * cuts) + 2;
