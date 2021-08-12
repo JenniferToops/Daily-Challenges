@@ -33,7 +33,7 @@ function removeUrlAnchor(u){
   }
 
   /* multiples of 3 or 5 */
-  
+
   function solution(number){
     let multiplesArr = []
     if (number === 0) {
@@ -46,3 +46,19 @@ function removeUrlAnchor(u){
       }
     } return multiplesArr.reduce((acc, c) => acc + c, 0)
   }
+
+/* sum of digits  
+It involves implementing a program that sums the digits of a non-negative integer. For example, the sum of 3433 digits is 13.
+Digits can be a number or a string, and you should control it is no undefined and return an empty string.
+To give you a little more excitement, the program will not only write the result of the sum, but also write all the sums used: 3 + 4 + 3 + 3 = 13.
+*/
+
+  function sum(digits) {
+    let total = 0
+    if (digits === undefined) {
+        total = ""
+    } else if (digits !== undefined) {
+        total = String(digits).split("").map(el => Number(el)).reduce((acc, c) => acc + c, 0)
+      }
+    return digits === undefined ? "" : String(digits).split("").join(" + ").concat(` = ${total}`)
+    } 
