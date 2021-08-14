@@ -139,3 +139,28 @@ function sortByLength (array) {
     let sArr = s.split(' ')
     return [... new Set(sArr)].join(" ")
   }
+
+  /*swap vowel case*/
+
+  function swapVowelCase(str) {
+    console.log('test: '+str)
+    let newStr = ""
+    const upperRegex = /[AEIOU]/
+    const lowerRegex = /[aeiou]/
+    
+    if (str.trim().length < 1) {
+      return str
+    } 
+      else {
+        for (let i = 0; i < str.length; i++) {
+          if (upperRegex.test(str[i])) {
+            newStr += str[i].toLowerCase() 
+          } else if (lowerRegex.test(str[i])) {
+            newStr += str[i].toUpperCase()
+          } else {
+            newStr += str[i]
+          }
+        }
+      }
+    return newStr
+  }
