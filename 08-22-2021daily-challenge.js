@@ -16,6 +16,7 @@ SeriesSum(5) => 1 + 1/4 + 1/7 + 1/10 + 1/13 = "1.57" */
 
 
 function SeriesSum(n) {
+    
     if (n === 0) {
      return `${n.toFixed(2)}`
     }
