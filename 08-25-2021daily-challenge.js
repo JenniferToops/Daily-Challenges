@@ -25,6 +25,6 @@ All the characters of jewels are unique. */
 function findTheJewels(jewels, stones) {
     let jewelsArray = jewels.split("")
     let stonesArray = stones.split("")
-    let stuffaroni = stonesArray.filter(el => jewelsArray.includes(el))
-    return stuffaroni.length
+    let jewelsInTheStonesArray = stonesArray.filter(el => jewelsArray.includes(el))
+    return jewelsInTheStonesArray.length
 }
