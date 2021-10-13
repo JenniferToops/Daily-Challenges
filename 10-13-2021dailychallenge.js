@@ -18,3 +18,28 @@ function returnNums(arr) {
 
 //returnNums([3, "22", 5, "32"])
 [3, 22, 5, 32]
+
+
+
+//given an array of integers and return the average as an integer
+
+function getAvg(array) {
+    let sum = 0
+for(let i = 0; i < array.length; i++) {
+        sum += array[i]
+   } console.log(sum / array.length)
+    return Math.floor(sum / array.length)
+}
+
+getAvg(array)
+
+
+function getAvg(array) {
+    let sum = 0
+for(let i = 0; i < array.length; i++) {
+        sum += array[i]
+   } console.log(sum / array.length)
+    return Math.floor(sum / array.length)
+}
+
+getAvg(array)
