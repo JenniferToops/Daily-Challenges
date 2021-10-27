@@ -18,3 +18,22 @@ function findDeletedNumber(arr, mixArr) {
   }
 
   const findDeletedNumber = (arr, mixArr) => arr.length == mixArr.length ? 0 : Number(arr.filter(el => !mixArr.includes(el)))
+
+
+
+//Driving school series #1
+/* Every month, a random number of students take the driving test at Fast & Furious (F&F) Driving School. To pass the test, a student cannot accumulate more than 18 demerit points.
+
+At the end of the month, F&F wants to calculate the average demerit points accumulated by ONLY the students who have passed, rounded to the nearest integer.
+
+Write a function which would allow them to do so. If no students passed the test that month, return 'No pass scores registered.'.
+
+
+Example:
+
+[10,10,10,18,20,20] --> 12 */
+
+function passed (list) { 
+    let filteredList = list. filter(el => el < 19)
+    return filteredList.length < 1 ? "No pass scores registered." : Math.round(filteredList.reduce((acc, c) => acc + c, 0) / filteredList.length)
+  } 
