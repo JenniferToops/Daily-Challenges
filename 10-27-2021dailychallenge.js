@@ -16,3 +16,5 @@ function findDeletedNumber(arr, mixArr) {
     }
     return Number(arr.filter(el => !mixArr.includes(el)))
   }
+
+  const findDeletedNumber = (arr, mixArr) => arr.length == mixArr.length ? 0 : Number(arr.filter(el => !mixArr.includes(el)))
