@@ -6,7 +6,7 @@ function returnOnlyNums(arr) {
 
 console.log(returnOnlyNums(["3", 3, "22", 5]), [3, 3, 22, 5])
 
---or--
+//--or--
 
 function returnNums(arr) {
     for(let i = 0; i < arr.length; i++) {
